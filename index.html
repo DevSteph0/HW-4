@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Random Quiz</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    h1 {
+      box-sizing: border-box;
+      width: 100%;
+      border: solid #c53d3d00 10px;
+      padding: 5px;
+    }
+    h2 {
+      border: 4mm ridge rgba(18, 254, 167, 0.782);
+    }
+    body{
+      background-color: rgb(205, 205, 205);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w-100 vh-100  d-flex justify-content-center">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
+        <div class="col-sm-8 quiz-col mx-auto h-25" id="start-container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h3 class="mb-3"> 10 seconds to answer each question</h3>
+              <button class="btn btn-primary btn-lg mx-auto" id="start-btn">Start Quiz</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 quiz-col mx-auto h-75 d-none" id="quiz-container">
+          <div class="row">
+            <div class="col-sm-4 mb-2 mx-auto">
+              <img class="img-fluid" id="quiz-img" src="" alt="">
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-sm-12 d-flex justify-content-center">
+              <h3 id="question"></h3>
+            </div>
+          </div>
+          <h1> <div class="row d-flex justify-content-center question-row">
+            <div class="col-sm-3 choice-col">
+              <a class="choice" id="choice-a" onclick="checkAnswer('A')"></a>
+            </div>
+            <div class="col-sm-3 choice-col">
+              <a class="choice" id="choice-b" onclick="checkAnswer('B')"></a>
+            </div>
+            <div class="col-sm-3 choice-col">
+              <a class="choice" id="choice-c" onclick="checkAnswer('C')"></a>
+            </div>
+          </div>
+        </h1>
+          <div class="row d-flex flex-row flex-wrap justify-content-between">
+          
+              <div id="timer">
+              
+                <div id="counter"></div>
+              
+                <div id="btimeGauge">
+                  <p>/10 sec</p>
+                </div>
+                <h2>
+                <div id="timeGauge"></div>
+              </div>
+            </h2>
+              
+              <div id="progress"></div>
+            </div>
+          </div>
+            
+        <div class="col-sm-8 quiz-col h-50 mx-auto d-none" id="score">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h1 class="mb-3" id="score-content"></h1>
+            </div>
+            <div class="col-sm-6 mx-auto text-center">
+              <p class="lead">Enter your name to record your score!</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter your initials" id="user-name">
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="submit-score">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-8 quiz-col h-50 mx-auto d-none" id="high-score-container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h1 class="mb-3">If you got more than 25% right we could possibly be friends</h1>
+              <ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+
+
+
