@@ -6,6 +6,7 @@ To help familiarize you with these tests and allow you to use the skills covered
 This week’s coursework will equip you with all the skills you need to succeed in this assignment.
 
 #Deployed link
+[Random Quiz v3.pdf](https://github.com/DevSteph0/HW-4/files/10610795/Random.Quiz.v3.pdf)
 
 https://devsteph0.github.io/HW-4/
 
@@ -19,3 +20,5 @@ https://devsteph0.github.io/HW-4/
 -more styling cause it does work as a simple quiz but it's not up my standards of styling
 -images are all different sizes
 -finding a way for the content inside of a container to be more organized i.e parent container and child container
+
+
