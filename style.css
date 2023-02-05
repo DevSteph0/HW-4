@@ -1,0 +1,145 @@
+body {
+  background-color: rgba(240, 255, 255, 0.809);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+}
+
+.col-sm-8 {
+  padding: 1.5rem;
+}
+
+.quiz-navbar {
+  background-color: rgba(255, 255, 255, 0.622);
+}
+
+.quiz-col {
+  border-radius: .25rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+
+.choice-col {
+  background-color: rgba(255, 255, 255, 0.571);
+  border-radius: .25rem;
+  border: 1px solid black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  margin: 0 1rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.choice {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.correct {
+  background-color: #0f0;
+}
+
+.incorrect {
+  background-color: #f00;
+}
+
+#timer {
+  height: 100px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+#counter {
+  font-size: 9em;
+  border: 1px solid black;
+}
+
+#btimeGauge {
+  width: 150px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  margin-left: 25px;
+}
+
+#timeGauge {
+  height: 10px;
+  border-radius: 10px;
+  margin-top: -10px;
+  margin-left: 25px;
+}
+
+#progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.prog {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+ul {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  padding: .75rem 1rem;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  font-size: 1.125rem;
+  margin: .5rem 0
+}
+
+@media screen and (max-width: 575px) {
+  .justify-content-between {
+    justify-content: center ;
+  }
+
+  .h-25 {
+    height: 35% ;
+  }
+
+  .h-75 {
+    height: auto ;
+  }
+
+  .choice-col {
+    margin-bottom: 1rem;
+  }
+
+  .question-row {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h-25 {
+    height: 35% ;
+  }
+
+  .h-75 {
+    height: auto ;
+  }
+
+  .choice-col {
+    margin-bottom: 1rem;
+  }
+
+  .question-row {
+    margin-bottom: 1rem;
+  }
+}
